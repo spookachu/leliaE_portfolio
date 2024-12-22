@@ -1,0 +1,141 @@
+:root {
+    --white: #ffffff;           /* Pure white for backgrounds or highlights */
+    --rosy-brown: #ae847e;      /* Warm neutral for accents */
+    --burgundy: #2E86AB;        /* Deep red for primary emphasis */
+    --dark-green: #36382E;      /* Dark green for subtle backgrounds or text */
+    --eerie-black: #1c1c1c;     /* Almost black for text or deep backgrounds */
+}
+
+/* General Styles */
+body {
+    font-family: 'Trebuchet MS','sans-serif';
+    font-size: 16px;
+    color: var(--dark-green);  
+    margin: 0;
+    padding: 0;
+    background-color: var(--white); 
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: var(--burgundy); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a.nav-link {
+    color: var(--white); 
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a.nav-link:hover {
+    color: var(--rosy-brown); 
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--burgundy), var(--dark-green)); 
+    color: var(--white); 
+    text-align: left;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    background-color: var(--white); 
+    color: var(--dark-green);      
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--rosy-brown); 
+    padding-bottom: 10px;
+    color: var(--burgundy); 
+}
+
+p {
+    margin: 10px 0;
+    color: var(--dark-green); 
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--dark-green); 
+    color:#ae847e;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.875rem;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: var(--burgundy); 
+    color: var(--white);             
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--rosy-brown); 
+}
+
+/* Custom Containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--rosy-brown); 
+    border: 1px solid var(--dark-green); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: var(--burgundy); 
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--burgundy);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--rosy-brown); 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a.nav-link {
+        margin-right: 10px;
+    }
+}
